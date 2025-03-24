@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>70-Day Coding Interview Prep Guide</title>
+    <style>
+      :root {
+        --primary: #2c3e50;
+        --secondary: #3498db;
+        --light: #ecf0f1;
+        --dark: #2c3e50;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f6fa;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        color: var(--primary);
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        color: var(--secondary);
+        border-bottom: 2px solid var(--secondary);
+        padding-bottom: 10px;
+        margin-top: 40px;
+      }
+
+      .section {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: var(--primary);
+        color: white;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      a {
+        color: var(--secondary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .checklist {
+        background: #e8f4fc;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+
+      .motivation {
+        text-align: center;
+        padding: 30px;
+        background: var(--primary);
+        color: white;
+        border-radius: 10px;
+        margin: 40px 0;
+      }
+
+      .pro-tip {
+        background: #fff3cd;
+        padding: 15px;
+        border-left: 4px solid #ffc107;
+        margin: 15px 0;
+      }
+
+      .progress-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: #ddd;
+        z-index: 1000;
+      }
+
+      #progress-bar {
+        height: 100%;
+        background: var(--secondary);
+        transition: width 0.5s;
+        text-align: center;
+        color: white;
+        font-size: 12px;
+      }
+
+      @media (max-width: 768px) {
+        table {
+          display: block;
+          overflow-x: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <div class="container">
+      <h1>70-Day Coding Interview Preparation Roadmap 🚀</h1>
+
+      <div class="motivation">
+        <h2>Daily Habit: Code 2–3 hours, revise notes</h2>
+        <p>
+          Weekly Goal: Solve 15–20 problems | Monthly Goal: Master 1–2 DSA
+          topics
+        </p>
+      </div>
+
+      <!-- C++ Basics Section -->
+      <div class="section">
+        <h2>📚 C++ Basics + Arrays & Strings</h2>
+
+        <div class="pro-tip">
+          <strong>Pro Tip:</strong> Master STL containers early - they'll save
+          time in problem solving!
+        </div>
+
+        <h3>C++ Fundamentals (Days 1-7)</h3>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Topics</th>
+            <th>Resources</th>
+            <th>Practice</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Variables, loops, conditionals</td>
+            <td>
+              <a
+                href="https://www.codecademy.com/learn/learn-c-plus-plus"
+                target="_blank"
+                >Codecademy C++</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://www.hackerrank.com/challenges/cpp-hello-world"
+                target="_blank"
+                >Hello World</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Functions, recursion</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/functions-in-cpp/"
+                target="_blank"
+                >GeeksforGeeks</a
+              >
+            </td>
+            <td>HackerRank functions problems</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pointers, references</td>
+            <td>
+              <a
+                href="https://www.learncpp.com/cpp-tutorial/pointers/"
+                target="_blank"
+                >Learn CPP</a
+              >
+            </td>
+            <td>Pointer manipulation</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>OOP basics</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/"
+                target="_blank"
+                >GeeksforGeeks OOP</a
+              >
+            </td>
+            <td>Build Student class</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>STL: vector, string</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/vector-in-cpp-stl/"
+                target="_blank"
+                >Vector Guide</a
+              >
+            </td>
+            <td>
+              <a href="https://leetcode.com/problems/two-sum/" target="_blank"
+                >Two Sum</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Revision + Project</td>
+            <td>Week 1 notes</td>
+            <td>To-Do List app</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Rest/Reflect</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+
+        <h3>Arrays & Strings (Days 8-14)</h3>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Topics</th>
+            <th>Resources</th>
+            <th>Practice</th>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Prefix Sum, Sliding Window</td>
+            <td>
+              <a
+                href="https://leetcode.com/discuss/study-guide/1773893/"
+                target="_blank"
+                >LeetCode Guide</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/maximum-subarray/"
+                target="_blank"
+                >Max Subarray</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Two Pointers</td>
+            <td>
+              <a
+                href="https://leetcode.com/discuss/study-guide/1688903/"
+                target="_blank"
+                >Two Pointers Guide</a
+              >
+            </td>
+            <td>
+              <a href="https://leetcode.com/problems/3sum/" target="_blank"
+                >3Sum</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Hashmaps</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/"
+                target="_blank"
+                >Unordered Map</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/group-anagrams/"
+                target="_blank"
+                >Group Anagrams</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>String Manipulation</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/stdstring-class-in-c/"
+                target="_blank"
+                >String Class</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/longest-palindromic-substring/"
+                target="_blank"
+                >Longest Palindromic</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Revision</td>
+            <td>Days 8-11 notes</td>
+            <td>Optimization practice</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Mock Problem</td>
+            <td>-</td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/container-with-most-water/"
+                target="_blank"
+                >Container Water</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Rest/Reflect</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Linked Lists Section -->
+      <div class="section">
+        <h2>🔗 Linked Lists, Stacks, Queues</h2>
+
+        <div class="pro-tip">
+          <strong>Pro Tip:</strong> Always draw linked list operations before
+          coding!
+        </div>
+
+        <h3>Linked Lists (Days 15-21)</h3>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Topics</th>
+            <th>Resources</th>
+            <th>Practice</th>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Singly Linked Lists</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/linked-list/"
+                target="_blank"
+                >LL Tutorial</a
+              >
+            </td>
+            <td>Implement LL class</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Fast & Slow Pointers</td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/linked-list-cycle/solutions/"
+                target="_blank"
+                >Cycle Detection</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/linked-list-cycle/"
+                target="_blank"
+                >LL Cycle</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Doubly Linked Lists</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/doubly-linked-list/"
+                target="_blank"
+                >DLL Guide</a
+              >
+            </td>
+            <td>Browser History</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Merge/Reverse Lists</td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/reverse-linked-list/solutions/"
+                target="_blank"
+                >Reverse LL</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/merge-two-sorted-lists/"
+                target="_blank"
+                >Merge Two Lists</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Advanced Problems</td>
+            <td>
+              <a href="https://leetcode.com/tag/linked-list/" target="_blank"
+                >LL Problems</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/merge-k-sorted-lists/"
+                target="_blank"
+                >Merge K Lists</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Revision</td>
+            <td>Days 15-19</td>
+            <td>Edge cases practice</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Rest/Reflect</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+
+        <h3>Stacks & Queues (Days 22-28)</h3>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Topics</th>
+            <th>Resources</th>
+            <th>Practice</th>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>Stack Implementation</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/stack-in-cpp-stl/"
+                target="_blank"
+                >Stack Guide</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/valid-parentheses/"
+                target="_blank"
+                >Valid Parentheses</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Monotonic Stacks</td>
+            <td>
+              <a
+                href="https://leetcode.com/discuss/study-guide/2347639/"
+                target="_blank"
+                >Monotonic Guide</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/daily-temperatures/"
+                target="_blank"
+                >Daily Temperatures</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>Queue Implementation</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/queue-cpp-stl/"
+                target="_blank"
+                >Queue Guide</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/number-of-recent-calls/"
+                target="_blank"
+                >Recent Calls</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>Priority Queues</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/priority-queue-in-cpp-stl/"
+                target="_blank"
+                >PQ Guide</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/kth-largest-element-in-an-array/"
+                target="_blank"
+                >Kth Largest</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>Revision</td>
+            <td>Days 22-25</td>
+            <td>Timed practice</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>Mock Problem</td>
+            <td>-</td>
+            <td>
+              <a href="https://leetcode.com/problems/min-stack/" target="_blank"
+                >Min Stack</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>Rest/Reflect</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Trees & Graphs Section -->
+      <div class="section">
+        <h2>🌳 Trees, Graphs, Sorting & Searching</h2>
+
+        <div class="pro-tip">
+          <strong>Pro Tip:</strong> Master tree traversals first - they form the
+          basis for most tree problems!
+        </div>
+
+        <h3>Trees (Days 29-35)</h3>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Topics</th>
+            <th>Resources</th>
+            <th>Practice</th>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>Binary Tree Traversals</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/tree-traversals/"
+                target="_blank"
+                >GeeksforGeeks</a
+              ><br />
+              <a href="https://youtu.be/WLvU5EQVZqY" target="_blank"
+                >NeetCode Video</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/binary-tree-inorder-traversal/"
+                target="_blank"
+                >Inorder Traversal</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>BST Operations</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/binary-search-tree-data-structure/"
+                target="_blank"
+                >BST Guide</a
+              ><br />
+              <a href="https://youtu.be/PZYTs9y4f4o" target="_blank"
+                >BST Visualization</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/validate-binary-search-tree/"
+                target="_blank"
+                >Validate BST</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>AVL Trees/Heaps</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/heap-data-structure/"
+                target="_blank"
+                >Heap Guide</a
+              ><br />
+              <a href="https://youtu.be/HqPJF2L5h9U" target="_blank"
+                >Heap Applications</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/top-k-frequent-elements/"
+                target="_blank"
+                >Top K Elements</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>Trie/Segment Trees</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/trie-insert-and-search/"
+                target="_blank"
+                >Trie Guide</a
+              ><br />
+              <a href="https://youtu.be/u0n-6zBnohY" target="_blank"
+                >Segment Trees</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/implement-trie-prefix-tree/"
+                target="_blank"
+                >Implement Trie</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>Revision</td>
+            <td>Tree notes</td>
+            <td>Recursion practice</td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td>Mock Problem</td>
+            <td>-</td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/binary-tree-level-order-traversal/"
+                target="_blank"
+                >Level Order</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>35</td>
+            <td>Rest/Reflect</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+
+        <h3>Graphs & Sorting (Days 36-42)</h3>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Topics</th>
+            <th>Resources</th>
+            <th>Practice</th>
+          </tr>
+          <tr>
+            <td>36</td>
+            <td>Graph Representations</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/graph-data-structure/"
+                target="_blank"
+                >Graph Basics</a
+              ><br />
+              <a href="https://youtu.be/tWVWeAqZ0WU" target="_blank"
+                >Graph Theory</a
+              >
+            </td>
+            <td>Implement BFS</td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>DFS/BFS Applications</td>
+            <td>
+              <a
+                href="https://leetcode.com/discuss/study-guide/1072548/"
+                target="_blank"
+                >BFS vs DFS</a
+              ><br />
+              <a href="https://youtu.be/7fujbpJ0LB4" target="_blank"
+                >Graph Traversals</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/number-of-islands/"
+                target="_blank"
+                >Number of Islands</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td>Dijkstra's Algorithm</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/"
+                target="_blank"
+                >Dijkstra's Guide</a
+              ><br />
+              <a href="https://youtu.be/EFg3u_E6eHU" target="_blank"
+                >Algorithm Walkthrough</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/network-delay-time/"
+                target="_blank"
+                >Network Delay</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td>Sorting Algorithms</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/sorting-algorithms/"
+                target="_blank"
+                >Sorting Guide</a
+              ><br />
+              <a href="https://youtu.be/kPRA0W1kECg" target="_blank"
+                >Sorting Visualized</a
+              >
+            </td>
+            <td>Implement Merge/Quick Sort</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>Revision</td>
+            <td>Graph notes</td>
+            <td>Complexity analysis</td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td>Mock Problem</td>
+            <td>-</td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/course-schedule/"
+                target="_blank"
+                >Course Schedule</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>Rest/Reflect</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- DP & Greedy Section -->
+      <div class="section">
+        <h2>📈 Dynamic Programming & Greedy</h2>
+
+        <div class="pro-tip">
+          <strong>Pro Tip:</strong> Start with memoization before moving to
+          tabulation for DP problems!
+        </div>
+
+        <h3>Dynamic Programming (Days 43-49)</h3>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Topics</th>
+            <th>Resources</th>
+            <th>Practice</th>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>DP Basics</td>
+            <td>
+              <a
+                href="https://leetcode.com/discuss/study-guide/458695/"
+                target="_blank"
+                >DP Patterns</a
+              ><br />
+              <a href="https://youtu.be/oBt53YbR9Kk" target="_blank"
+                >DP Masterclass</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/climbing-stairs/"
+                target="_blank"
+                >Climbing Stairs</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td>Knapsack Problems</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/"
+                target="_blank"
+                >Knapsack Guide</a
+              ><br />
+              <a href="https://youtu.be/8LusJS5-AGo" target="_blank"
+                >Knapsack Tutorial</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/partition-equal-subset-sum/"
+                target="_blank"
+                >Partition Subset</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>LCS/LIS Problems</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/"
+                target="_blank"
+                >LCS Guide</a
+              ><br />
+              <a href="https://youtu.be/Esx-TxF5PSo" target="_blank"
+                >LIS Patterns</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/longest-increasing-subsequence/"
+                target="_blank"
+                >LIS Problem</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td>Matrix DP</td>
+            <td>
+              <a
+                href="https://leetcode.com/discuss/study-guide/662866/"
+                target="_blank"
+                >Matrix DP</a
+              ><br />
+              <a href="https://youtu.be/We3YDTzNXEk" target="_blank"
+                >Grid Problems</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/minimum-path-sum/"
+                target="_blank"
+                >Min Path Sum</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td>Revision</td>
+            <td>DP notes</td>
+            <td>Recursive → DP conversion</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>Mock Problem</td>
+            <td>-</td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/coin-change/"
+                target="_blank"
+                >Coin Change</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>Rest/Reflect</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+
+        <h3>Greedy & Bit Manipulation (Days 50-56)</h3>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Topics</th>
+            <th>Resources</th>
+            <th>Practice</th>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>Greedy Basics</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/greedy-algorithms/"
+                target="_blank"
+                >Greedy Guide</a
+              ><br />
+              <a href="https://youtu.be/ARvQcqJ_-NY" target="_blank"
+                >When to Use Greedy</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+                target="_blank"
+                >Stock Buy/Sell</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>Interval Scheduling</td>
+            <td>
+              <a href="https://leetcode.com/tag/greedy/" target="_blank"
+                >Interval Guide</a
+              ><br />
+              <a href="https://youtu.be/nONCGxWoUfM" target="_blank"
+                >Interval Patterns</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/non-overlapping-intervals/"
+                target="_blank"
+                >Non-overlapping</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>Bit Basics</td>
+            <td>
+              <a
+                href="https://leetcode.com/discuss/study-guide/669996/"
+                target="_blank"
+                >Bit Guide</a
+              ><br />
+              <a href="https://youtu.be/4qjprDkJrjY" target="_blank"
+                >Bit Hacks</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/number-of-1-bits/"
+                target="_blank"
+                >Number of 1 Bits</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>Advanced Bit</td>
+            <td>
+              <a
+                href="https://www.geeksforgeeks.org/bit-tricks-competitive-programming/"
+                target="_blank"
+                >Bit Tricks</a
+              ><br />
+              <a href="https://youtu.be/3vDIGdWWA0k" target="_blank"
+                >Bit Manipulation</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/sum-of-two-integers/"
+                target="_blank"
+                >Sum of Integers</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>54</td>
+            <td>Revision</td>
+            <td>Greedy notes</td>
+            <td>Greedy intuition</td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>Mock Problem</td>
+            <td>-</td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/gas-station/"
+                target="_blank"
+                >Gas Station</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>56</td>
+            <td>Rest/Reflect</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Mock Interviews Section -->
+      <div class="section">
+        <h2>🎯 Mock Interviews & Final Prep</h2>
+
+        <div class="pro-tip">
+          <strong>Pro Tip:</strong> Record your mock interviews to review
+          communication skills!
+        </div>
+
+        <h3>Mock Interviews (Days 57-63)</h3>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Focus Area</th>
+            <th>Resources</th>
+            <th>Practice</th>
+          </tr>
+          <tr>
+            <td>57</td>
+            <td>Arrays/Strings</td>
+            <td>
+              <a href="https://www.pramp.com/" target="_blank">Pramp</a><br />
+              <a href="https://interviewing.io/" target="_blank"
+                >Interviewing.io</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/minimum-window-substring/"
+                target="_blank"
+                >Minimum Window</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>58</td>
+            <td>Linked Lists</td>
+            <td>
+              <a href="https://leetcode.com/interview/" target="_blank"
+                >LeetCode Mock</a
+              ><br />
+              <a href="https://youtu.be/VF9G25M6S4M" target="_blank"
+                >LL Strategies</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/copy-list-with-random-pointer/"
+                target="_blank"
+                >Copy List</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>59</td>
+            <td>Trees/Graphs</td>
+            <td>
+              <a
+                href="https://www.youtube.com/c/NeetCode/playlists"
+                target="_blank"
+                >NeetCode</a
+              ><br />
+              <a href="https://youtu.be/4rbCNnB7Q48" target="_blank"
+                >Tree Strategies</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+                target="_blank"
+                >Serialize BT</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>60</td>
+            <td>DP/Greedy</td>
+            <td>
+              <a
+                href="https://www.educative.io/courses/grokking-the-coding-interview"
+                target="_blank"
+                >Grokking</a
+              ><br />
+              <a href="https://youtu.be/oBt53YbR9Kk" target="_blank"
+                >DP Patterns</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://leetcode.com/problems/coin-change/"
+                target="_blank"
+                >Coin Change</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>61</td>
+            <td>Analyze Mistakes</td>
+            <td>-</td>
+            <td>Review recordings</td>
+          </tr>
+          <tr>
+            <td>62</td>
+            <td>LeetCode Contest</td>
+            <td>
+              <a href="https://leetcode.com/contest/" target="_blank"
+                >Weekly Contest</a
+              >
+            </td>
+            <td>Aim for top 50%</td>
+          </tr>
+          <tr>
+            <td>63</td>
+            <td>Rest/Reflect</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+
+        <h3>Final Revision (Days 64-70)</h3>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Activity</th>
+            <th>Resources</th>
+            <th>Checklist</th>
+          </tr>
+          <tr>
+            <td>64</td>
+            <td>Blind 75 (1-25)</td>
+            <td>
+              <a
+                href="https://leetcode.com/discuss/general-discussion/460599/"
+                target="_blank"
+                >Blind 75</a
+              ><br />
+              <a href="https://neetcode.io/" target="_blank">NeetCode 150</a>
+            </td>
+            <td>5 problems/day</td>
+          </tr>
+          <tr>
+            <td>65</td>
+            <td>Blind 75 (26-50)</td>
+            <td>
+              <a
+                href="https://leetcode.com/discuss/interview-question/"
+                target="_blank"
+                >Discuss</a
+              ><br />
+              <a href="https://youtu.be/4Urd0a0BNng" target="_blank"
+                >Video Solutions</a
+              >
+            </td>
+            <td>Optimal approaches</td>
+          </tr>
+          <tr>
+            <td>66</td>
+            <td>Blind 75 (51-75)</td>
+            <td>
+              <a href="https://leetcode.com/company-tag/" target="_blank"
+                >Company Tags</a
+              ><br />
+              <a href="https://youtu.be/NXQi_g1pVqI" target="_blank"
+                >Problem Solving</a
+              >
+            </td>
+            <td>Code without hints</td>
+          </tr>
+          <tr>
+            <td>67</td>
+            <td>Company Questions</td>
+            <td>
+              <a href="https://leetcode.com/company/google/" target="_blank"
+                >Google</a
+              ><br />
+              <a href="https://leetcode.com/company/amazon/" target="_blank"
+                >Amazon</a
+              >
+            </td>
+            <td>5 problems/day</td>
+          </tr>
+          <tr>
+            <td>68</td>
+            <td>Behavioral Prep</td>
+            <td>
+              <a
+                href="https://www.themuse.com/advice/30-behavioral-interview-questions"
+                target="_blank"
+                >STAR Method</a
+              ><br />
+              <a href="https://youtu.be/PJKYqLP6MRE" target="_blank"
+                >Behavioral Guide</a
+              >
+            </td>
+            <td>Prepare 5 stories</td>
+          </tr>
+          <tr>
+            <td>69</td>
+            <td>Final Mock</td>
+            <td>
+              <a href="https://interviewing.io/" target="_blank"
+                >Interviewing.io</a
+              >
+            </td>
+            <td>FAANG simulation</td>
+          </tr>
+          <tr>
+            <td>70</td>
+            <td>Rest/Reflect</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Final Checklist -->
+      <div class="checklist">
+        <h3>Final Checklist ✅</h3>
+        <ul>
+          <li>
+            <input type="checkbox" /> 300+ LeetCode Problems (Blind 75 +
+            NeetCode 150)
+          </li>
+          <li>
+            <input type="checkbox" /> 10+ Mock Interviews
+            (Pramp/Interviewing.io)
+          </li>
+          <li>
+            <input type="checkbox" /> C++ STL Mastery (vectors, maps, queues)
+          </li>
+          <li>
+            <input type="checkbox" /> Time Complexity Analysis for all solutions
+          </li>
+          <li><input type="checkbox" /> 5 Behavioral Stories (STAR method)</li>
+        </ul>
+      </div>
+
+      <!-- Enhanced Resources Section -->
+      <div class="section">
+        <h2>🚀 Supercharge Your Prep</h2>
+
+        <div class="checklist">
+          <h3>Ultimate Resource List</h3>
+          <ul>
+            <li>
+              📚
+              <a href="https://cppreference.com/" target="_blank"
+                >C++ Reference</a
+              >
+            </li>
+            <li>
+              📚
+              <a
+                href="https://github.com/jwasham/coding-interview-university"
+                target="_blank"
+                >Coding Interview University</a
+              >
+            </li>
+            <li>
+              📚
+              <a
+                href="https://www.educative.io/courses/grokking-the-system-design-interview"
+                target="_blank"
+                >Grokking System Design</a
+              >
+            </li>
+            <li>
+              📚
+              <a
+                href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+                target="_blank"
+                >MIT Algorithms</a
+              >
+            </li>
+            <li>
+              🎥
+              <a href="https://www.youtube.com/c/NeetCode" target="_blank"
+                >NeetCode YouTube</a
+              >
+            </li>
+            <li>
+              🎥
+              <a href="https://www.youtube.com/c/AbdulBari" target="_blank"
+                >Abdul Bari YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="checklist">
+          <h3>Interview Success Kit</h3>
+          <ul>
+            <li>
+              📌
+              <a
+                href="https://leetcode.com/discuss/interview-experience/"
+                target="_blank"
+                >Company Experiences</a
+              >
+            </li>
+            <li>
+              📌
+              <a
+                href="https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU"
+                target="_blank"
+                >Top 100 LeetCode</a
+              >
+            </li>
+            <li>
+              📌
+              <a
+                href="https://github.com/lnishan/awesome-competitive-programming"
+                target="_blank"
+                >Competitive Programming</a
+              >
+            </li>
+            <li>
+              📌
+              <a
+                href="https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/view"
+                target="_blank"
+                >Tech Interview Handbook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Progress Tracking -->
+      <div class="section">
+        <h2>📊 Progress Tracker</h2>
+        <div class="checklist">
+          <h3>Weekly Milestones</h3>
+          <ul>
+            <li>
+              <input type="checkbox" /> Week 1: C++ Fundamentals Completed
+            </li>
+            <li><input type="checkbox" /> Week 2: Arrays & Strings Mastered</li>
+            <li><input type="checkbox" /> Week 3: Linked Lists Proficient</li>
+            <li><input type="checkbox" /> Week 4: Trees/Graphs Intermediate</li>
+            <li><input type="checkbox" /> Week 5: DP Patterns Understood</li>
+            <li><input type="checkbox" /> Week 6: Mock Interviews Started</li>
+            <li><input type="checkbox" /> Week 7: Final Revision Complete</li>
+          </ul>
+
+          <h3>Skill Checklist</h3>
+          <ul>
+            <li><input type="checkbox" /> Big O Analysis for All Solutions</li>
+            <li><input type="checkbox" /> Graph Traversal Mastery</li>
+            <li>
+              <input type="checkbox" /> 10+ Sorting Algorithms Implemented
+            </li>
+            <li><input type="checkbox" /> Dynamic Programming Patterns</li>
+            <li><input type="checkbox" /> System Design Basics</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="motivation">
+        <h3>You're Ready for the Big Leagues! 🏆</h3>
+        <p>
+          "The only way to do great work is to love what you do." - Steve Jobs
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Progress Tracking System
+      document
+        .querySelectorAll('input[type="checkbox"]')
+        .forEach((checkbox) => {
+          const id = checkbox.parentElement.textContent.trim();
+          checkbox.checked = localStorage.getItem(id) === "true";
+
+          checkbox.addEventListener("change", () => {
+            localStorage.setItem(id, checkbox.checked);
+            updateProgress();
+          });
+        });
+
+      function updateProgress() {
+        const total = document.querySelectorAll(
+          'input[type="checkbox"]'
+        ).length;
+        const checked = document.querySelectorAll(
+          'input[type="checkbox"]:checked'
+        ).length;
+        const progress = ((checked / total) * 100).toFixed(1);
+
+        const progressBar = document.getElementById("progress-bar");
+        progressBar.style.width = `${progress}%`;
+        progressBar.textContent = `${progress}% Complete`;
+      }
+
+      // Initial progress update
+      updateProgress();
+    </script>
+  </body>
+</html>
